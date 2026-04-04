@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buildings & Photons – Gebäudemonitoring als Service</title>
+    <meta name="description" content="Monitoring, Simulation und Robotik für kommunale Gebäude. Wir schicken Roboter. Und Differentialgleichungen.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+<nav>
+        <a class="brand" href="index.html">
+            <svg viewBox="-14 -14 88 88" width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="ma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                        <path d="M2 1L8 5L2 9" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </marker>
+                </defs>
+                <rect x="8" y="8" width="44" height="44" rx="1" stroke="#1a1a1a" stroke-width="2.2" fill="none"/>
+                <line x1="15" y1="8" x2="27" y2="8" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#ma)"/>
+                <line x1="52" y1="15" x2="52" y2="27" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#ma)"/>
+                <line x1="45" y1="52" x2="33" y2="52" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#ma)"/>
+                <line x1="8" y1="45" x2="8" y2="33" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#ma)"/>
+                <circle cx="8" cy="8" r="2.5" fill="#1a1a1a"/>
+                <circle cx="52" cy="8" r="2.5" fill="#1a1a1a"/>
+                <circle cx="52" cy="52" r="2.5" fill="#1a1a1a"/>
+                <circle cx="8" cy="52" r="2.5" fill="#1a1a1a"/>
+                <path d="M8,8 q-3,-3 0,-6 q3,-3 0,-6 q-3,-3 0,-6 q3,-3 0,-6" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" fill="none" transform="rotate(-45,8,8)"/>
+                <path d="M52,8 q3,-3 0,-6 q-3,-3 0,-6 q3,-3 0,-6 q-3,-3 0,-6" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" fill="none" transform="rotate(45,52,8)"/>
+                <path d="M52,52 q3,3 0,6 q-3,3 0,6 q3,3 0,6 q-3,3 0,6" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" fill="none" transform="rotate(-45,52,52)"/>
+                <path d="M8,52 q-3,3 0,6 q3,3 0,6 q-3,3 0,6 q3,3 0,6" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round" fill="none" transform="rotate(45,8,52)"/>
+            </svg>
+            Buildings &amp; Photons
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Start</a>
+            <a href="monitoring.html">Monitoring</a>
+            <a href="vision.html">Vision</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>
+            Wir schicken Roboter.
+            <span class="second">Und Differential&shy;gleichungen.</span>
+        </h1>
+        <p class="subtitle">Monitoring &middot; Simulation &middot; Robotik</p>
+    </header>
+
+    <section>
+        <h2>Das Problem</h2>
+        <p class="muted">
+            Kommunale Gebäude stehen nachts leer. Einbrüche, Wasserschäden,
+            Heizungsausfälle, Energieverschwendung — die Folgen kennen alle.
+            Was fehlt ist kein Wachdienst und keine Kamera. Es ist ein System
+            das dauerhaft misst, versteht und alarmiert — ohne Datenschutzprobleme,
+            ohne geschultes Personal, ohne teure Infrastruktur.
+        </p>
+    </section>
+
+    <section>
+        <h2>Was wir machen</h2>
+        <p class="muted">Wir kombinieren permanente Sensormessung, autonome Roboterbegehung
+        und bauphysikalische Simulation zu einem vollständig betreuten Service.</p>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-symbol">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#1a1a1a" stroke-width="1.8">
+                        <rect x="2" y="2" width="16" height="16" rx="1"/>
+                    </svg>
+                </span>
+                <span class="feature-title">Monitoring</span>
+                <span class="feature-desc">Sensoren für Temperatur, Feuchte, Wasser, Tür, Bewegung. Alarm per E-Mail und Messenger. Autark über LTE.</span>
+            </div>
+            <div class="feature">
+                <span class="feature-symbol">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#1a1a1a" stroke-width="1.8">
+                        <circle cx="10" cy="10" r="8"/>
+                        <circle cx="10" cy="10" r="3"/>
+                    </svg>
+                </span>
+                <span class="feature-title">Simulation</span>
+                <span class="feature-desc">Physikalisches Modell statt Schwellwerte. Schimmelrisiko, Taupunkt, MPC — auch ohne teure Gebäudetechnik.</span>
+            </div>
+            <div class="feature">
+                <span class="feature-symbol">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#1a1a1a" stroke-width="1.8">
+                        <polygon points="10,2 18,16 2,16"/>
+                    </svg>
+                </span>
+                <span class="feature-title">Robotik</span>
+                <span class="feature-desc">Autonome Begehung bei Alarm. RGB- und Wärmebildkamera. Waveshare UGV Rover und Unitree Go2.</span>
+            </div>
+        </div>
+        <p style="margin-top: 16px;"><a href="monitoring.html" style="color: var(--text); font-size: 14px;">→ System im Detail</a></p>
+    </section>
+
+    <section>
+        <h2>So funktioniert es bei Alarm</h2>
+        <p class="muted" style="margin-bottom: 16px;">Sensor schlägt an — Alarm geht raus — Rover fährt zur Quelle — Sie entscheiden remote.</p>
+        <img src="reaktionskette.png" alt="Reaktionskette bei Alarm: Detektion, Alarmierung, Verifikation durch Rover, Entscheidung" style="width: 100%; height: auto; display: block; max-width: 100%;"/>
+    </section>
+
+    <section>
+        <h2>Die Hardware</h2>
+        <p class="muted" style="margin-bottom: 20px;">Eigene Geräte, offene Protokolle — kein proprietäres Ökosystem.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+            <div style="padding: 0 20px 0 0; display: flex; flex-direction: column; border-right: 1px solid var(--border);">
+                <img src="dewey_unit.png" alt="DeweyOne Messeinheit" style="width: 100%; height: 180px; object-fit: contain; display: block; margin-bottom: 16px;"/>
+                <p style="font-size: 12px; font-weight: bold; margin-bottom: 10px;">DeweyOne</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ WiFi Access Point</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ Zigbee · Z-Wave · WiFi Sensoren</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ 4G / LTE Anbindung</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ RGB-Kamera</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ Wärmebildkamera</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 0;">→ Remote-Zugriff zur Wartung</p>
+            </div>
+            <div style="padding: 0 0 0 20px; display: flex; flex-direction: column;">
+                <img src="rover.png" alt="Rover" style="width: 100%; height: 180px; object-fit: contain; display: block; margin-bottom: 16px;"/>
+                <p style="font-size: 12px; font-weight: bold; margin-bottom: 10px;">Rover</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ 6-Wheel Drive</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ RGB-Kamera · Pan-Tilt</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ Remote-Steuerung</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ Zigbee · Z-Wave Sensoren</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 4px;">→ 4G / LTE Anbindung</p>
+                <p style="font-size: 11px; color: var(--muted); margin-bottom: 0;">→ LiDAR · Autonome Erkundung (folgt)</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Wer wir sind</h2>
+        <p class="muted">
+            Physik trifft Handwerk — aus Esslingen. Wir glauben dass kommunale Gebäude
+            besser, günstiger und klimafreundlicher betrieben werden können.
+            Ohne Konzern. Ohne Vendor Lock-in.
+        </p>
+        <p style="margin-top: 12px;"><a href="vision.html" style="color: var(--text); font-size: 14px;">→ Vision und Roadmap</a></p>
+    </section>
+
+    <div class="cta-block">
+        <p class="cta-title">Pilotpartner gesucht</p>
+        <p class="cta-sub">
+            Kommunen die jetzt einsteigen gestalten das System mit — und bekommen
+            eine Lösung die von Anfang an auf ihre Gebäude zugeschnitten ist.
+        </p>
+        <p class="cta-sub">
+            Wir kommen vorbei, schauen uns das Gebäude an und installieren die
+            Sensortechnik. Schäden früher erkennen, Energie im Blick, kein
+            IT-Aufwand auf eurer Seite. Keine versteckten Kosten.
+        </p>
+        <p class="cta-sub">Schreibt uns — wir melden uns.</p>
+        <a class="cta-btn" href="mailto:pilot@buildingsandphotons.de">Gespräch anfragen</a>
+        <p class="cta-small">pilot@buildingsandphotons.de &middot; Buildings &amp; Photons &middot; Esslingen am Neckar</p>
+    </div>
+
+    <footer>
+        <span>&copy; 2026 Buildings &amp; Photons</span>
+        <div>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
